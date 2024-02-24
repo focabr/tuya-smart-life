@@ -750,6 +750,7 @@ SENSORS: dict[str, tuple[SmartLifeSensorEntityDescription, ...]] = {
             key=DPCode.CUR_NEUTRAL,
             name="Total reverse energy",
             device_class=SensorDeviceClass.ENERGY,
+            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             state_class=SensorStateClass.TOTAL_INCREASING,
         ),
         SmartLifeSensorEntityDescription(
