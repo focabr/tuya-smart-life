@@ -442,7 +442,7 @@ UNITS = (
     ),
     UnitOfMeasurement(
         unit=UnitOfEnergy.KILO_WATT_HOUR,
-        aliases={"kwh", "kilowatt-hour", "kW·h"},
+        aliases={"kwh", "kilowatt-hour", "kW·h", "kW.h"},
         device_classes={SensorDeviceClass.ENERGY},
     ),
     UnitOfMeasurement(
