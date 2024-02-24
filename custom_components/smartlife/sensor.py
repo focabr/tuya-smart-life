@@ -741,10 +741,17 @@ SENSORS: dict[str, tuple[SmartLifeSensorEntityDescription, ...]] = {
     # https://developer.tuya.com/en/docs/iot/dlq?id=Kb0kidk9enyh8
     "dlq": (
         SmartLifeSensorEntityDescription(
-            key=DPCode.FORWARD_ENERGY_TOTAL,
+            key=DPCode.TOTAL_FORWARD_ENERGY,
             name="Total energy",
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING,
+        ),
+        SmartLifeSensorEntityDescription(
+            key=DPCode.CUR_NEUTRAL,
+            name="Total reverse energy",
+            device_class=SensorDeviceClass.ENERGY,
+            state_class=SensorStateClass.TOTAL_INCREASING,
+            native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
         ),
         SmartLifeSensorEntityDescription(
             key=DPCode.PHASE_A,
