@@ -157,7 +157,6 @@ class DPCode(StrEnum):
     CRY_DETECTION_SWITCH = "cry_detection_switch"
     CUP_NUMBER = "cup_number"  # NUmber of cups
     CUR_CURRENT = "cur_current"  # Actual current
-    CUR_NEUTRAL = "cur_neutral"  # Reverse power
     CUR_POWER = "cur_power"  # Actual power
     CUR_VOLTAGE = "cur_voltage"  # Actual voltage
     DECIBEL_SENSITIVITY = "decibel_sensitivity"
@@ -369,7 +368,7 @@ class DPCode(StrEnum):
     WORK_MODE = "work_mode"  # Working mode
     WORK_POWER = "work_power"
     ADD_ELE = "add_ele"
-
+    CUR_NEUTRAL = "cur_neutral"
 
 @dataclass
 class UnitOfMeasurement:

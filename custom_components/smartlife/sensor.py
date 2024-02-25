@@ -752,6 +752,7 @@ SENSORS: dict[str, tuple[SmartLifeSensorEntityDescription, ...]] = {
             device_class=SensorDeviceClass.ENERGY,
             state_class=SensorStateClass.TOTAL_INCREASING,
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
+            subkey="power",
             entity_registry_enabled_default=True,
         ),
         SmartLifeSensorEntityDescription(
